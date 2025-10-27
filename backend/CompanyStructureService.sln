@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{45FFFE10-44D6-4458-AAB0-4074A5481BD1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyStructureService.Application", "src\CompanyStructureService.Application\CompanyStructureService.Application.csproj", "{EAF22B65-D359-4C58-8F83-8D94B571333F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyStructureService.Contracts", "src\CompanyStructureService.Contracts\CompanyStructureService.Contracts.csproj", "{6B50A083-E912-4BB8-8435-DE860D70F200}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyStructureService.Domain", "src\CompanyStructureService.Domain\CompanyStructureService.Domain.csproj", "{2D549854-D02C-43B7-9746-9CB1E67FC620}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyStructureService.Infrastructure.EFCore", "src\CompanyStructureService.Infrastructure.EFCore\CompanyStructureService.Infrastructure.EFCore.csproj", "{260D9E5C-02BF-4F8E-8937-231A67BF256B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyStructureService.Presenters", "src\CompanyStructureService.Presenters\CompanyStructureService.Presenters.csproj", "{7B17EFD1-C9D7-4565-8B8B-D514234E0DF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAF22B65-D359-4C58-8F83-8D94B571333F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF22B65-D359-4C58-8F83-8D94B571333F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF22B65-D359-4C58-8F83-8D94B571333F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF22B65-D359-4C58-8F83-8D94B571333F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B50A083-E912-4BB8-8435-DE860D70F200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B50A083-E912-4BB8-8435-DE860D70F200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B50A083-E912-4BB8-8435-DE860D70F200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B50A083-E912-4BB8-8435-DE860D70F200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D549854-D02C-43B7-9746-9CB1E67FC620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D549854-D02C-43B7-9746-9CB1E67FC620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D549854-D02C-43B7-9746-9CB1E67FC620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D549854-D02C-43B7-9746-9CB1E67FC620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{260D9E5C-02BF-4F8E-8937-231A67BF256B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260D9E5C-02BF-4F8E-8937-231A67BF256B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260D9E5C-02BF-4F8E-8937-231A67BF256B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260D9E5C-02BF-4F8E-8937-231A67BF256B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B17EFD1-C9D7-4565-8B8B-D514234E0DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B17EFD1-C9D7-4565-8B8B-D514234E0DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B17EFD1-C9D7-4565-8B8B-D514234E0DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B17EFD1-C9D7-4565-8B8B-D514234E0DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11BF8EC0-4035-4C18-828F-32A108DC882E}
+	EndGlobalSection
+EndGlobal
