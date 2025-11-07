@@ -11,6 +11,10 @@ namespace CompanyStructureService.Domain.Department
 {
     public class DepartmentLocation
     {
+        //EFCore
+        public DepartmentLocation() { }
+
+
         public DepartmentId DepartmentId { get; }
         public LocationId LocationId { get; }
 

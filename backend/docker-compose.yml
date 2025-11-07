@@ -1,0 +1,24 @@
+﻿version: '3.9'
+
+services:
+  company-structure-db:
+    container_name: companystructure-postgres
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_DB: company_structure
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5438:5432"            # localhost:5438 → контейнер:5432
+    volumes:
+      - companystructure-postgres-data:/var/lib/postgresql/data
+    networks:
+      - companystructure-network
+
+volumes:
+  companystructure-postgres-data:
+
+networks:
+  companystructure-network:
+    driver: bridge

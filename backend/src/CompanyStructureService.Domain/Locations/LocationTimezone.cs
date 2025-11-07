@@ -11,6 +11,9 @@ namespace CompanyStructureService.Domain.Locations
     {
         public string TimeZoneIANA => TimeZoneInfo.Id;
         public TimeZoneInfo TimeZoneInfo { get; }
+
+        //EFCore
+        private LocationTimezone() { }
         private LocationTimezone(TimeZoneInfo timezone)
         {
             TimeZoneInfo = timezone;

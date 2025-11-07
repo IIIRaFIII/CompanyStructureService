@@ -9,6 +9,10 @@ namespace CompanyStructureService.Domain.Locations
 {
     public class Location
     {
+        //EFCore
+        public Location() { }
+
+
         public LocationId Id { get; private set; }
         public LocationName Name { get; private set; }
         public LocationAddress Address { get; private set; }

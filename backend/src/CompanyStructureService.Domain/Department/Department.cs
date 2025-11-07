@@ -10,13 +10,17 @@ namespace CompanyStructureService.Domain.Department
 {
     public class Department
     {
+        //EFCore
+        private Department() { }
+
+
         private readonly List<DepartmentPosition> _positionIds = [];
         private readonly List<DepartmentLocation> _locationIds;
 
         public DepartmentId Id { get; private set; }
         public DepartmentName Name { get; private set; }
         public DepartmentIdentifier Identifier { get; private set; }
-        public Guid? ParentId { get; private set; }
+        public DepartmentId? ParentId { get; private set; }
         public DepartmentPath Path { get; }
         public short Depth { get; private set; }
         public bool IsActive { get; private set; }
@@ -25,7 +29,7 @@ namespace CompanyStructureService.Domain.Department
         public IReadOnlyList<DepartmentLocation> LocationIds => _locationIds;
         public IReadOnlyList<DepartmentPosition> PositionIds => _positionIds;
 
-        private Department(DepartmentId id, DepartmentName name, DepartmentIdentifier identifier, Guid? parentId, DepartmentPath path, short depth, IEnumerable<DepartmentLocation> locations)
+        private Department(DepartmentId id, DepartmentName name, DepartmentIdentifier identifier, DepartmentId? parentId, DepartmentPath path, short depth, IEnumerable<DepartmentLocation> locations)
         {
             Id = id;
             Name = name;
@@ -52,8 +56,14 @@ namespace CompanyStructureService.Domain.Department
             var path = DepartmentPath.BuildFrom(identifier, parent?.Path);
             short depth = CalculateDepth(parent);
 
-
-            return Result.Success(new Department(id, name, identifier, parent?.Id?.Value, path, depth, locations));
+            return Result.Success(new Department(
+                id,
+                name,
+                identifier,
+                parent?.Id,
+                path,
+                depth,
+                locations));
         }
 
         private static short CalculateDepth(Department? parent)
