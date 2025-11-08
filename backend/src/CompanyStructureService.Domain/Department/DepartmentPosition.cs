@@ -11,8 +11,13 @@ namespace CompanyStructureService.Domain.Department
 {
     public class DepartmentPosition
     {
+        //EFCore
+        public DepartmentPosition() { }
+
+
         public DepartmentId DepartmentId { get; }
         public PositionId PositionId { get; }
+
         private DepartmentPosition(DepartmentId departmentId, PositionId positionId)
         {
             DepartmentId = departmentId;

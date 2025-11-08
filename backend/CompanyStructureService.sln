@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyStructureService.Application", "src\CompanyStructureService.Application\CompanyStructureService.Application.csproj", "{EAF22B65-D359-4C58-8F83-8D94B571333F}"
@@ -17,7 +18,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyStructureService.Dom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyStructureService.Infrastructure.EFCore", "src\CompanyStructureService.Infrastructure.EFCore\CompanyStructureService.Infrastructure.EFCore.csproj", "{260D9E5C-02BF-4F8E-8937-231A67BF256B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyStructureService.Presenters", "src\CompanyStructureService.Presenters\CompanyStructureService.Presenters.csproj", "{7B17EFD1-C9D7-4565-8B8B-D514234E0DF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyStructureService.Presenters", "src\CompanyStructureService.Presenters\CompanyStructureService.Presenters.csproj", "{7B17EFD1-C9D7-4565-8B8B-D514234E0DF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

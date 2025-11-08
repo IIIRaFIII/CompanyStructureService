@@ -9,6 +9,10 @@ namespace CompanyStructureService.Domain.Positions
 {
     public class Position
     {
+        //EFCore
+        public Position() { }
+
+
         public PositionId Id { get; private set; }
         public PositionName Name { get; private set; }
         public PositionDescription? Description { get; private set; }
